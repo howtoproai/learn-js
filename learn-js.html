@@ -2,13 +2,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript</title>
-  <link rel="stylesheet" href="learn-js.css">
+  <title>On click</title>
 </head>
 <body>
-  <h2>What Can JavaScript Do?</h2>
-  <p id="demo" style="color: red;">Click here for answer</span></p>
- <button type="button" onclick='document.getElementById("demo").innerHTML = "JavaScript Can Change the innerHTML"'>Click Me!</button>
-
+  <h2>How JavaSript Can Change the Attribute of an Iteam bulb</h2>
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image. </p>
+  
+  <button onclick="document.getElementById('bulb').src='./image/pic_bulbonon.gif'">Turn On the Bulb</button>
+  <img id="bulb"  src="./image/pic_bulboff.gif" style="height: 100px;">
+  <button onclick="document.getElementById('bulb').src='./image/pic_bulbonoff.gif'">Turn off the Bulb</button>
 </body>
 </html>
