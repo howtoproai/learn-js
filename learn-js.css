@@ -1,5 +1,6 @@
-button{
-    
-    border: 2px solid red;
-  
+body{
+    background-color:rgb(235, 223, 208);
+    width: 1280px;
+    margin: 20px 10px 0px 20px;
+    padding: 20px 10px 0px 20px;
 }

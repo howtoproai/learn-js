@@ -2,14 +2,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>On click</title>
+  <title>Bulb on off with button</title>
+  <link rel="stylesheet" href="./learn-js.css">
 </head>
 <body>
-  <h2>How JavaSript Can Change the Attribute of an Iteam bulb</h2>
-  <p>In this case JavaScript changes the value of the src (source) attribute of an image. </p>
-  
-  <button onclick="document.getElementById('bulb').src='./image/pic_bulbonon.gif'">Turn On the Bulb</button>
-  <img id="bulb"  src="./image/pic_bulboff.gif" style="height: 100px;">
-  <button onclick="document.getElementById('bulb').src='./image/pic_bulbonoff.gif'">Turn off the Bulb</button>
+  <div>
+    <H1>Learn JavaScript</H1>
+    <h2>1. What Can JavaScript do</h2>
+    <p id="demo">JavaScript can change the innerElement of the HTML</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML ='Hi we have changed the button'">Click Here</button>
+  </div>
+ <div>
+  <h2>2. How to create on/off button with JavaScript</h2>
+  <button onclick="document.getElementById('Bulb').src='./image/pic_bulbonon.gif'">Click to on bulb</button>
+   <img id="Bulb"  src="./image/pic_bulbonoff.gif" style="height: 100px;">
+  <button onclick="document.getElementById('Bulb').src='./image/pic_bulbonoff.gif'">Click to off bulb</button>
+ </div>
+ <div>
+  <h2>3.How to change font by JavaScript</h2>
+  <p id="fontSize">JavaScript Can change the value of the font</p>
+  <button type="button" onclick="document.getElementById('fontSize').style.fontSize='35px'">Click Here!</button>
+<button onclick="document.getElementById('fontSize').style.fontSize = '15px'">Undo</button>
+ </div>
 </body>
 </html>
