@@ -2,19 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Variables</title>
+    <title>JavaScript is Case Sensitive</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
-<body>
-    <h2>The var Keyword Creates Multiple Variables</h2>
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try to change lastName to lastname.</p>
 
 <p id="demo"></p>
- <script>
-    var x, y;
-     x = 5 * 6;
-     y = x * 10;
-     document.getElementById('demo').innerHTML = y;
- </script>
+
+<script>
+let lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+document.getElementById("demo").innerHTML = lastName + "  " +lastname;
+</script>
 
 </body>
 </html>
