@@ -8,15 +8,22 @@
 <body>
     <h2>Creating an Object<h2>
 
-        <p id="demo"></p>
-  <script>
-    const car ={
-        Carname : "Volvo",
-        color : "red",
-        driven : 35,
-    };
-    document.getElementById('demo').innerHTML = car.Carname +'<br>'+ car.color +'<br>'+  car.driven;
-  </script>
+  <p id="demo">In line Object</p>
+
+<script>
+ const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566,
+   fullname : function() {
+    return this.firstName + "  " + this.lastName;
+   }
+};
+
+// Display lastName from the Object:
+document.getElementById("demo").innerHTML = person.fullname;
+</script>
+
     
     
 </body>
