@@ -2,18 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>declare many variables in one statement</title>
+    <title>pre-decremented</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-    <p>You can declare many variables in one statement.</p>
+    <p>In this example, y is decremented before it is assigned to x (pre-decremented).</p>
     
-    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     
- <script>
-    let person = "John Harris" , age = 60, adress = "64 streets .ST";
-    document.getElementById('demo').innerHTML= person +"<br>"+ age +"<br>" + adress;
- </script>
+    <script>
+    var x = 5;
+    var y = --x;
+    
+    document.getElementById("demo1").innerHTML = y;
+    document.getElementById("demo2").innerHTML = x;
+    </script>
     
     
 </body>
