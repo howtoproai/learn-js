@@ -2,18 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>function with arguments</title>
+    <title>function with 2 arguments</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h2>Calling a function with arguments</h2>
-
-<button onclick="myfunction('Harry Potter ' , 'Wizard')">Try It!</button>
- <p id="demo">Onclick function will call the arguments</p>
-<script>
-    function myfunction(name,job){
-    document.getElementById('demo').innerHTML = " Wellcome " +name+ " The" +job+ "!";
-    }
-</script>
+     <h2>On Click function will be called to display the arguments passed on it</h2>
+     <input type="button" onclick="myfunction('Good Morning !')" value="In the Morning">
+     <input type="button" onclick="myfunction('Good Evening')" value="In the evening">
+     <p id="demo"></p>
+     <script>
+        function myfunction(show){
+            document.getElementById('demo').innerHTML = show ; 
+        }
+     </script>
 </body>
 </html>
