@@ -6,23 +6,20 @@
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-    <h2>JavaScript if .. else</h2>
+    <h1>Time Based Greeting Using if, else if, else</h1>
 
-<p>A time-based greeting:</p>
-
-<p id="demo"></p>
-
+<p id="demo">Greetings</p>
 <script>
-const hour = new Date().getHours(); 
-let greeting;
-
-if (hour < 9) {
-  greeting = "Good day";
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10){
+        greeting = "Good Morning";
+} else if (time > 8){
+    greeting = "Good Day";
 } else {
-  greeting = "Good evening";
+    greeting = "Good Evening";
 }
-
-document.getElementById("demo").innerHTML = greeting;
+document.getElementById('demo').innerHTML = greeting;
 </script>
      
     
