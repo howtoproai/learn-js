@@ -2,21 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Case</title>
+    <title>time greeting</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-    <p>Change Case</p>
+    <h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 9) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
      
-    <button onclick="myfunction()">Try It</button>
-    <p id="demo">Hello World!</p>
-   <script>
-    function myfunction() {
-      let text = document.getElementById("demo").innerHTML;
-      document.getElementById("demo").innerHTML =
-      text.toUpperCase();
-    }
-    </script>
+    
     
     
 </body>
