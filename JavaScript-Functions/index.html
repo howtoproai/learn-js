@@ -2,19 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>function Return A Value</title>
+    <title>Time Attribute</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-    <h2>Fahrenheit to Celcius</h2>
- <p id="demo">Call a function that will convert the result</p>
-    <script>
-        function toCelcius(f){
-           return (5/9) * (f-32);
-        }
+    <h1>The onclick Time Attribute</h1>
 
-        let Value = toCelcius(77);
-        document.getElementById('demo').innerHTML = Value;
-    </script>
+    
+   <!-- <button onclick="document.getElementById('demo').innerHTML=Date()">The Time is</button> -->
+    <input type="button" onclick="document.getElementById('demo').innerHTML=Date()" value="What Time is now">
+    <p id="demo"></p>
+    
 </body>
 </html>
