@@ -2,18 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>function with 2 arguments</title>
+    <title>function Return A Value</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-     <h2>On Click function will be called to display the arguments passed on it</h2>
-     <input type="button" onclick="myfunction('Good Morning !')" value="In the Morning">
-     <input type="button" onclick="myfunction('Good Evening')" value="In the evening">
-     <p id="demo"></p>
-     <script>
-        function myfunction(show){
-            document.getElementById('demo').innerHTML = show ; 
+    <h1>JavaScript function Returs Claculation</h1>
+      <p id="demo"></p>
+    <script>
+        let x = myfunction(3,4);
+        document.getElementById('demo').innerHTML = x;
+        function myfunction(a,b){
+            return a * b;
         }
-     </script>
+    </script>
 </body>
 </html>
