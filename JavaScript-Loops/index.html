@@ -2,22 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Objec</title>
+    <title>Objec Type</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h2>Creating JavaScript Object</h2>
-  <p id="demo"></p>
-  <script>
-    let person = {
-      firstName : "John",
-      lastName  : "Doe",
-      age     : 50,
-      eyeColor  : "blue"
-    };
-    
-    document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
-    </script>
+  <h1>Tyepe of Object</h1>
+
+<p id="demo"></p>
+
+<script>
+  var x1 = new Object();   // A new Object object
+  var x2 = new String();   // A new String object
+  var x3 = new Number();   // A new Number object
+  var x4 = new Boolean();  // A new Boolean object
+  var x5 = new Array();  // A new Array object
+  var x6 = new RegExp();   // A new RegExp object
+  var x7 = new Function(); // A new Function object
+  var x8 = new Date();   // A new Date object
+  
+  document.getElementById("demo").innerHTML =
+  "type " + typeof x1 + "<br>" +
+  "type " + typeof x2 + "<br>" +
+  "type " + typeof x3 + "<br>" +
+  "type " + typeof x4 + "<br>" +
+  "type " + typeof x5 + "<br>" +
+  "type " + typeof x6 + "<br>" +
+  "type " + typeof x7 + "<br>" +
+  "type " + typeof x8 + "<br>";
+  </script>
+
     
 </body>
 </html>
