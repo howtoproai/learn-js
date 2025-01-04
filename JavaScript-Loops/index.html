@@ -2,22 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loopos through HTMl Header</title>
+    <title>JavaScript While Loop</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h2>Loopin through HTML Header</h2>
-  <p id="demo"></p>
-
+  <h2>While Loop</h2>
+  <p id="demo">assignment</p>
   <script>
-    
-   var x = "", i;
-   for (i=1; i<=6; i++){
-    x = x + "<h" + i + ">Heading " + i + "</h" + i + ">";
-    x = x + "<h" + i + ">Heading " + i + "</h" + i + ">";
+   let text = "";
+   let i = 0;
+
+   do {
+    text += "<br> The number is " + i;
+    i++;
    }
-    document.getElementById('demo').innerHTML = x;
-  </script>
+   while (i<10);
+   document.getElementById('demo').innerHTML =text;
+        </script>
     
     
 </body>
