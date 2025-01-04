@@ -2,19 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Break A Loop</title>
+    <title>Break and Continue Loop</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h2>Breaking a Loop</h2>
+  <h2>Break and Continue Loop</h2>
   <p id="demo"></p>
   <script>
 
-  let text = '';
-  for (let i = 0; i <10; i++){
-    if(i===3) {break;}
-    text += "The number is " + 1 + "<br>";
-  }
+    const person = {Name:"Alim", Job:"Digital Product", Age:"29"}
+    let text = "";
+    for (let x in person){text += [x] + " ";}
+    for (let x in person){text += [x] + "<br>";}
+   
+   
 
    document.getElementById('demo').innerHTML = text;
   </script>
