@@ -2,24 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Break and Continue Loop</title>
+    <title>JavaScript Objec</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h2>Break and Continue Loop</h2>
+  <h2>Creating JavaScript Object</h2>
   <p id="demo"></p>
   <script>
-
-    const person = {Name:"Alim", Job:"Digital Product", Age:"29"}
-    let text = "";
-    for (let x in person){text += [x] + " ";}
-    for (let x in person){text += [x] + "<br>";}
-   
-   
-
-   document.getElementById('demo').innerHTML = text;
-  </script>
+    let person = {
+      firstName : "John",
+      lastName  : "Doe",
+      age     : 50,
+      eyeColor  : "blue"
+    };
     
+    document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+    </script>
     
 </body>
 </html>
