@@ -21,14 +21,15 @@
   var x8 = new Date();   // A new Date object
   
   document.getElementById("demo").innerHTML =
-  "type " + typeof x1 + "<br>" +
-  "type " + typeof x2 + "<br>" +
-  "type " + typeof x3 + "<br>" +
-  "type " + typeof x4 + "<br>" +
-  "type " + typeof x5 + "<br>" +
-  "type " + typeof x6 + "<br>" +
-  "type " + typeof x7 + "<br>" +
-  "type " + typeof x8 + "<br>";
+  "type {} Object" + typeof x1 + "<br>" +
+  "type 'String' " + typeof x2 + "<br>" +
+  "type 0 Number " + typeof x3 + "<br>" +
+  "type true/false Boolean" + typeof x4 + "<br>" +
+  "type [] Array" + typeof x5 + "<br>" +
+  "type /()/ RegExp" + typeof x6 + "<br>" +
+  "type (){} Function " + typeof x7 + "<br>" +
+  "type .date Object " + typeof x7 + "<br>" ;
+
   </script>
 
     
