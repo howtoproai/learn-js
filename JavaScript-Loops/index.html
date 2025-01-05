@@ -2,36 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objec Type</title>
+    <title>Creating JavaScript Objects</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h1>Tyepe of Object</h1>
+  <h1>Creating Object in JavaScript</h1>
+  <p id="demo"></p>
+ <script>
+  const person = {
+ firstName: "Aleem",
+ lastname: "Sheikh",
+ age: 32,
+ eyeColor: "hazel"
+ };
+ let x = person;
+ x.age =10;
 
-<p id="demo"></p>
-
-<script>
-  var x1 = new Object();   // A new Object object
-  var x2 = new String();   // A new String object
-  var x3 = new Number();   // A new Number object
-  var x4 = new Boolean();  // A new Boolean object
-  var x5 = new Array();  // A new Array object
-  var x6 = new RegExp();   // A new RegExp object
-  var x7 = new Function(); // A new Function object
-  var x8 = new Date();   // A new Date object
-  
-  document.getElementById("demo").innerHTML =
-  "type {} Object" + typeof x1 + "<br>" +
-  "type 'String' " + typeof x2 + "<br>" +
-  "type 0 Number " + typeof x3 + "<br>" +
-  "type true/false Boolean" + typeof x4 + "<br>" +
-  "type [] Array" + typeof x5 + "<br>" +
-  "type /()/ RegExp" + typeof x6 + "<br>" +
-  "type (){} Function " + typeof x7 + "<br>" +
-  "type .date Object " + typeof x7 + "<br>" ;
-
-  </script>
-
+ document.getElementById('demo').innerHTML = "the name of the person is "+ person.firstName + " and his age is " + person.age;
+ </script>
     
 </body>
 </html>
