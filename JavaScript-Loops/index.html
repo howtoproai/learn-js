@@ -2,22 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creating JSON Objects</title>
+    <title>Looping Through Property Values</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h1>Accsing Property with JSON Objects</h1>
+  <h1>JSON Looping Through Property Values</h1>
   <p id="demo"></p>
  <script>
- const myJSON = '{"Name":"Aleem", "Age":32, "Car":"red"}';
+ const myJSON = '{"name":"aleem", "age":30, "car":"AMJ"}';
  const myObj = JSON.parse(myJSON);
-
  let text = "";
- for(const x in myObj){
-  text += x + ", ";
-  document.getElementById('demo').innerHTML = text;
+ for (const x in myObj){
+  text += myObj[x] + ", ";
  }
-  
+document.getElementById('demo').innerHTML = text;
+
+
  </script>
     
 </body>
