@@ -2,22 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looping Through Property Values</title>
+    <title>Nested JavaScript Objectss</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h1>JSON Looping Through Property Values</h1>
+  <h1>Access Nested JavaScript Objects</h1>
   <p id="demo"></p>
  <script>
- const myJSON = '{"name":"aleem", "age":30, "car":"AMJ"}';
- const myObj = JSON.parse(myJSON);
- let text = "";
- for (const x in myObj){
-  text += myObj[x] + ", ";
+ const myObj ={
+  "name":"aleem",
+  "age": 32,
+  "cars":{
+    "toyota":"V8",
+    "Honda":"CRV",
+    "Mercidise":"Amj"
+  }
  }
-document.getElementById('demo').innerHTML = text;
-
-
+ document.getElementById('demo').innerHTML = myObj.cars.Honda;
  </script>
     
 </body>
