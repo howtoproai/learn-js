@@ -2,24 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creating JavaScript Objects</title>
+    <title>Creating JSON Objects</title>
     <link rel="stylesheet" href="/style.css/style.css">
 </head>
 <body>
-  <h1>Creating Object in JavaScript</h1>
+  <h1>Accsing Property with JSON Objects</h1>
   <p id="demo"></p>
  <script>
-  const person = {
- firstName: "Aleem",
- lastname: "Sheikh",
- age: 32,
- eyeColor: "hazel"
- };
-//  const x = person;
-//  x.age =10;
+ const myJSON = '{"Name":"Aleem", "Age":32, "Car":"red"}';
+ const myObj = JSON.parse(myJSON);
 
- 
- document.getElementById('demo').innerHTML = person["firstName"] +  "is " + person["age"] + " years old";
+ let text = "";
+ for(const x in myObj){
+  text += x + ", ";
+  document.getElementById('demo').innerHTML = text;
+ }
+  
  </script>
     
 </body>
