@@ -76,22 +76,41 @@
 // console.log(" !(6<5) =", !(a===5)) // is ture 
 
 
-// Conditional if else if else Statement 
-// let age = 16;
-// if (age >= 18){
-//     console.log("yes he can vote");
-// };
-// if (age < 18){
-//     console.log("No he cant vote");
-// }
+//Conditional if else if else Statement 
+let age = 16;
+if (age<18){
+    console.log("junior")
+}else if (age>60){
+    console.log("Senior");
+}
+else {
+    console.log("middle");
+}
 
+
+
+ //Finding Even or odd with else if statement
+ let num = 9;
+
+ if (num%2 === 0){
+    console.log("Even")
+    
+ }else{ 
+ console.log("odd");
+}
+
+// change mode
 let mode = "dark";
 let color;
 if( mode === "dark"){
     color = "black";
-
- }if( mode === "light"){
+}else if( mode === "blue"){
+     color = "blue";
+} else if(mode === "pink"){
+    color = "pink";
+}else{
     color = "white";
- }
-
+}
  console.log(color);
+//
+if (mode === "dark"){console.log(mode);}
