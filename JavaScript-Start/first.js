@@ -1,25 +1,48 @@
-//Arithmatic operators
+// //Arithmatic operators
 
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, "& b = ", b);
+// console.log("a + b = ", a+b);
+// console.log("a - b = ", a-b);
+// console.log("a x b = ", a*b);
+// console.log("a / b = ", a/b);
+// console.log("a % b = ", a%b);
+// console.log("a ** b = ", a**b); //a to the power b =25
+
+// //Unary operators
+// console.log("a = ", a, "& b = ", b);
+
+//  console.log("a = ",a);
+
+//  console.log("a++ = ",a++);//a+1=5 post incerment
+
+//  console.log("++a = ",++a);//1+a=7 pre increment
+ 
+//  console.log("a-- = ", a--);//a-1=7 post increment
+
+//  console.log("a-- = ", --a);//--a=5 pre increment
+
+//Asignment Operators
 let a = 5;
 let b = 2;
 
-console.log("a = ", a, "& b = ", b);
-console.log("a + b = ", a+b);
-console.log("a - b = ", a-b);
-console.log("a x b = ", a*b);
-console.log("a / b = ", a/b);
-console.log("a % b = ", a%b);
-console.log("a ** b = ", a**b); //a to the power b =25
+// a += 4 is  a = a+4 
+console.log("a =",a+4);//9
 
-//Unary operators
-console.log("a = ", a, "& b = ", b);
+// a -=4; is  a = a - 4
+console.log("a =",a-4);//1
 
- console.log("a = ",a);
+// a*=4; is  a = a * 4
+console.log("a =",a*4);//20
 
- console.log("a++ = ",a++);//a+1=5 post incerment
+// a/=4 is a = a / 4
+console.log("a =",a/4);//1.24
 
- console.log("++a = ",++a);//1+a=7 pre increment
- 
- console.log("a-- = ", a--);//a-1=7 post increment
+//a%=4 is a = a % 4
+console.log("a =",a % 4);//1
 
- console.log("a-- = ", --a);//--a=5 pre increment
+// a**=4 is a = a**
+console.log("a =",a**4);//625
+
