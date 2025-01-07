@@ -77,40 +77,46 @@
 
 
 //Conditional if else if else Statement 
-let age = 16;
-if (age<18){
-    console.log("junior")
-}else if (age>60){
-    console.log("Senior");
-}
-else {
-    console.log("middle");
-}
+// let age = 16;
+// if (age<18){
+//     console.log("junior")
+// }else if (age>60){
+//     console.log("Senior");
+// }
+// else {
+//     console.log("middle");
+// }
 
 
 
- //Finding Even or odd with else if statement
- let num = 9;
+//  //Finding Even or odd with else if statement
+//  let num = 9;
 
- if (num%2 === 0){
-    console.log("Even")
+//  if (num%2 === 0){
+//     console.log("Even")
     
- }else{ 
- console.log("odd");
-}
+//  }else{ 
+//  console.log("odd");
+// }
 
-// change mode
-let mode = "dark";
-let color;
-if( mode === "dark"){
-    color = "black";
-}else if( mode === "blue"){
-     color = "blue";
-} else if(mode === "pink"){
-    color = "pink";
-}else{
-    color = "white";
-}
- console.log(color);
-//
-if (mode === "dark"){console.log(mode);}
+// // change mode
+// let mode = "dark";
+// let color;
+// if( mode === "dark"){
+//     color = "black";
+// }else if( mode === "blue"){
+//      color = "blue";
+// } else if(mode === "pink"){
+//     color = "pink";
+// }else{
+//     color = "white";
+// }
+//  console.log(color);
+// //
+// if (mode === "dark"){console.log(mode);}
+//Tenary operators
+let age = 25;
+let result = age > 18 ? "Adult" : "Not Adult";
+// you can also write by this way too
+age < 18 ? console.log("Adult") : console.log("Not Adult");
+console.log(result);
