@@ -22,7 +22,7 @@
  
 //  console.log("a-- = ", a--);//a-1=7 post increment
 
-//  console.log("a-- = ", --a);//--a=5 pre increment
+//  console.log("--a = ", --a);//--a=5 pre increment
 
 //Asignment Operators
 // let a = 5;
@@ -47,9 +47,17 @@
 // console.log("a =",a**4);//625
 
 //Comparison operators
-let a = 5;
-let b = 6;
-console.log( "a>b", a > b );
-console.log( "a<b", a < b );
-console.log( "a>=b", a >= b );
-console.log( "a<=b", a <= b );
+// let a = 5;
+// let b = 6;
+// console.log( "a>b", a > b );
+// console.log( "a<b", a < b );
+// console.log( "a>=b", a >= b );
+// console.log( "a<=b", a <= b );
+
+// Logical Operators
+let a = 6;
+let b = 5;
+let cond1 = a > b; //true
+let cond2 = a===5;//true
+console.log("cond1 && cond2 =", cond1 && cond2);
+console.log("cond1 && cond2 =", a > b && a===6);
