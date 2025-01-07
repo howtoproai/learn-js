@@ -69,8 +69,29 @@
 // let cond2 = a===5;
 // console.log("cond1 || cond2 =", cond1 || cond2);
 
-// ! logical Not Operators
-let a = 6;
-let b = 5;
+// // ! logical Not Operators
+// let a = 6;
+// let b = 5;
 
-console.log(" !(6<5) =", !(a===5)) // is ture 
+// console.log(" !(6<5) =", !(a===5)) // is ture 
+
+
+// Conditional if else if else Statement 
+// let age = 16;
+// if (age >= 18){
+//     console.log("yes he can vote");
+// };
+// if (age < 18){
+//     console.log("No he cant vote");
+// }
+
+let mode = "dark";
+let color;
+if( mode === "dark"){
+    color = "black";
+
+ }if( mode === "light"){
+    color = "white";
+ }
+
+ console.log(color);
