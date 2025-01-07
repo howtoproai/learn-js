@@ -25,24 +25,31 @@
 //  console.log("a-- = ", --a);//--a=5 pre increment
 
 //Asignment Operators
+// let a = 5;
+// let b = 2;
+
+// // a += 4 is  a = a+4 
+// console.log("a =",a+4);//9
+
+// // a -=4; is  a = a - 4
+// console.log("a =",a-4);//1
+
+// // a*=4; is  a = a * 4
+// console.log("a =",a*4);//20
+
+// // a/=4 is a = a / 4
+// console.log("a =",a/4);//1.24
+
+// //a%=4 is a = a % 4
+// console.log("a =",a % 4);//1
+
+// // a**=4 is a = a**
+// console.log("a =",a**4);//625
+
+//Comparison operators
 let a = 5;
-let b = 2;
-
-// a += 4 is  a = a+4 
-console.log("a =",a+4);//9
-
-// a -=4; is  a = a - 4
-console.log("a =",a-4);//1
-
-// a*=4; is  a = a * 4
-console.log("a =",a*4);//20
-
-// a/=4 is a = a / 4
-console.log("a =",a/4);//1.24
-
-//a%=4 is a = a % 4
-console.log("a =",a % 4);//1
-
-// a**=4 is a = a**
-console.log("a =",a**4);//625
-
+let b = 6;
+console.log( "a>b", a > b );
+console.log( "a<b", a < b );
+console.log( "a>=b", a >= b );
+console.log( "a<=b", a <= b );
