@@ -114,9 +114,38 @@
 //  console.log(color);
 // //
 // if (mode === "dark"){console.log(mode);}
-//Tenary operators
-let age = 25;
-let result = age > 18 ? "Adult" : "Not Adult";
-// you can also write by this way too
-age < 18 ? console.log("Adult") : console.log("Not Adult");
-console.log(result);
+
+
+//Ternary Operators
+// let age = 25;
+// let result = age > 18 ? "Adult" : "Not Adult";
+// // you can also write by this way too
+// age < 18 ? console.log("Adult") : console.log("Not Adult");
+// console.log(result);
+
+// user prompt
+// // let num = prompt('enter a number');
+
+// if (num %5 === 0){
+//     console.log(num, "Can Multiply by 5");
+// }else {
+//     console.log(num, "Can not Multiply by 5 ");
+// }
+
+// Assign grade to student based on score
+
+let score = prompt("enter your score");
+let grade;
+
+if (score >=90 && score <= 100){
+ grade = "A";
+}else if (score >=70 && score <=89){
+    grade = "B";
+}else if(score >=60 && score <= 69){
+    grade = "C";
+}else if(score >=50 && score <= 59){
+    grade = "D";
+}else if(score >=40 && score >=49){
+    grade = "E";
+}
+console.log("Your Grade is = ", grade);
